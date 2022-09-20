@@ -1,14 +1,35 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+     <addion-vue></addion-vue>
+     <subtraction-vue></subtraction-vue>
     </nav>
     <router-view/>
   </div>
 </template>
+<script>
+import addionVue from './components/Addion.vue';
+import subtractionVue from './components/SubtrAction.vue';
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  components: {
+        addionVue,
+        subtractionVue
+     }
+}
+
+
+
+</script>
+
+
+
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
